@@ -1,0 +1,377 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4907539F289B81F4005D8693 /* changehyp24.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4907539E289B81F4005D8693 /* changehyp24.mlmodel */; };
+		49B238D8288CEC6D000D0DE6 /* VisionObjectRecognitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B238D7288CEC6D000D0DE6 /* VisionObjectRecognitionVC.swift */; };
+		49E0B597288CBF4E0041A94C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E0B596288CBF4E0041A94C /* AppDelegate.swift */; };
+		49E0B599288CBF4E0041A94C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E0B598288CBF4E0041A94C /* SceneDelegate.swift */; };
+		49E0B59B288CBF4E0041A94C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E0B59A288CBF4E0041A94C /* ViewController.swift */; };
+		49E0B59E288CBF4E0041A94C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49E0B59C288CBF4E0041A94C /* Main.storyboard */; };
+		49E0B5A0288CBF4F0041A94C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49E0B59F288CBF4F0041A94C /* Assets.xcassets */; };
+		49E0B5A3288CBF4F0041A94C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49E0B5A1288CBF4F0041A94C /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4907539E289B81F4005D8693 /* changehyp24.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = changehyp24.mlmodel; sourceTree = "<group>"; };
+		49B238D7288CEC6D000D0DE6 /* VisionObjectRecognitionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionObjectRecognitionVC.swift; sourceTree = "<group>"; };
+		49E0B593288CBF4E0041A94C /* iDetectionChineseMedicine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDetectionChineseMedicine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49E0B596288CBF4E0041A94C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		49E0B598288CBF4E0041A94C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		49E0B59A288CBF4E0041A94C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		49E0B59D288CBF4E0041A94C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		49E0B59F288CBF4F0041A94C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49E0B5A2288CBF4F0041A94C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		49E0B5A4288CBF4F0041A94C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49E0B590288CBF4E0041A94C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49E0B58A288CBF4E0041A94C = {
+			isa = PBXGroup;
+			children = (
+				49E0B595288CBF4E0041A94C /* iDetectionChineseMedicine */,
+				49E0B594288CBF4E0041A94C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49E0B594288CBF4E0041A94C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49E0B593288CBF4E0041A94C /* iDetectionChineseMedicine.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49E0B595288CBF4E0041A94C /* iDetectionChineseMedicine */ = {
+			isa = PBXGroup;
+			children = (
+				49E0B596288CBF4E0041A94C /* AppDelegate.swift */,
+				49E0B598288CBF4E0041A94C /* SceneDelegate.swift */,
+				49E0B59A288CBF4E0041A94C /* ViewController.swift */,
+				49B238D7288CEC6D000D0DE6 /* VisionObjectRecognitionVC.swift */,
+				49E0B59C288CBF4E0041A94C /* Main.storyboard */,
+				49E0B59F288CBF4F0041A94C /* Assets.xcassets */,
+				49E0B5A1288CBF4F0041A94C /* LaunchScreen.storyboard */,
+				49E0B5A4288CBF4F0041A94C /* Info.plist */,
+				4907539E289B81F4005D8693 /* changehyp24.mlmodel */,
+			);
+			path = iDetectionChineseMedicine;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49E0B592288CBF4E0041A94C /* iDetectionChineseMedicine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49E0B5A7288CBF4F0041A94C /* Build configuration list for PBXNativeTarget "iDetectionChineseMedicine" */;
+			buildPhases = (
+				49E0B58F288CBF4E0041A94C /* Sources */,
+				49E0B590288CBF4E0041A94C /* Frameworks */,
+				49E0B591288CBF4E0041A94C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iDetectionChineseMedicine;
+			productName = iDetectionChineseMedicine;
+			productReference = 49E0B593288CBF4E0041A94C /* iDetectionChineseMedicine.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49E0B58B288CBF4E0041A94C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					49E0B592288CBF4E0041A94C = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 49E0B58E288CBF4E0041A94C /* Build configuration list for PBXProject "iDetectionChineseMedicine" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49E0B58A288CBF4E0041A94C;
+			productRefGroup = 49E0B594288CBF4E0041A94C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49E0B592288CBF4E0041A94C /* iDetectionChineseMedicine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49E0B591288CBF4E0041A94C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49E0B5A3288CBF4F0041A94C /* LaunchScreen.storyboard in Resources */,
+				49E0B5A0288CBF4F0041A94C /* Assets.xcassets in Resources */,
+				49E0B59E288CBF4E0041A94C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49E0B58F288CBF4E0041A94C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49E0B59B288CBF4E0041A94C /* ViewController.swift in Sources */,
+				49E0B597288CBF4E0041A94C /* AppDelegate.swift in Sources */,
+				49E0B599288CBF4E0041A94C /* SceneDelegate.swift in Sources */,
+				49B238D8288CEC6D000D0DE6 /* VisionObjectRecognitionVC.swift in Sources */,
+				4907539F289B81F4005D8693 /* changehyp24.mlmodel in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		49E0B59C288CBF4E0041A94C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49E0B59D288CBF4E0041A94C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		49E0B5A1288CBF4F0041A94C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49E0B5A2288CBF4F0041A94C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49E0B5A5288CBF4F0041A94C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		49E0B5A6288CBF4F0041A94C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49E0B5A8288CBF4F0041A94C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2FYJ9KX8U5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iDetectionChineseMedicine/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "i中藥辨識";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We are using a camera to enable you to detect chinese medicine.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kami.iDetectionChineseMedicine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		49E0B5A9288CBF4F0041A94C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2FYJ9KX8U5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iDetectionChineseMedicine/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "i中藥辨識";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We are using a camera to enable you to detect chinese medicine.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kami.iDetectionChineseMedicine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49E0B58E288CBF4E0041A94C /* Build configuration list for PBXProject "iDetectionChineseMedicine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49E0B5A5288CBF4F0041A94C /* Debug */,
+				49E0B5A6288CBF4F0041A94C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49E0B5A7288CBF4F0041A94C /* Build configuration list for PBXNativeTarget "iDetectionChineseMedicine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49E0B5A8288CBF4F0041A94C /* Debug */,
+				49E0B5A9288CBF4F0041A94C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49E0B58B288CBF4E0041A94C /* Project object */;
+}
