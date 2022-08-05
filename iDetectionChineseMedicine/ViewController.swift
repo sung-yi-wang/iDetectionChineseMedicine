@@ -9,8 +9,10 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
-    @IBOutlet weak private var previewView: UIView!
-    
+    @IBOutlet weak var previewView: UIView!
+    @IBOutlet weak var playButtonItem: UIBarButtonItem!
+    @IBOutlet weak var pauseButtonItem: UIBarButtonItem!
+
     var bufferSize: CGSize = .zero
     var rootLayer: CALayer! = nil
     private let session = AVCaptureSession()
@@ -112,6 +114,18 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         }
         
         return exifOrientation
+    }
+    
+    @IBAction func play(_ sender: UIBarButtonItem) {
+        session.stopRunning()
+        playButtonItem.isEnabled = false
+        pauseButtonItem.isEnabled = true
+    }
+    
+    @IBAction func pause(_ sender: UIBarButtonItem) {
+        session.startRunning()
+        playButtonItem.isEnabled = true
+        pauseButtonItem.isEnabled = false
     }
     
 }

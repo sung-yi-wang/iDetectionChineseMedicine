@@ -12,12 +12,14 @@ import Vision
 class VisionObjectRecognitionVC: ViewController {
     private var detectionOverlay: CALayer! = nil
     private var requests = [VNRequest]()
+    private var lastTime = Date();
+    private var predictTime = 0.0;
     
     @discardableResult
     func setupVision() -> NSError? {
         let error: NSError! = nil
         
-        guard let modelURL = Bundle.main.url(forResource: "changehyp24", withExtension: "mlmodelc") else {
+        guard let modelURL = Bundle.main.url(forResource: "yolov5s", withExtension: "mlmodelc") else {
             return NSError(domain: "VisionObjectRecognitionVC", code: -1, userInfo: [NSLocalizedDescriptionKey: "Model file is missing"])
         }
         
@@ -26,7 +28,9 @@ class VisionObjectRecognitionVC: ViewController {
             let objectRecognition = VNCoreMLRequest(model: visionModel, completionHandler: { (request, error) in
                 DispatchQueue.main.async(execute: {
                     if let results = request.results {
+                        self.predictTime = Date().timeIntervalSince1970 - self.lastTime.timeIntervalSince1970;
                         self.drawVisionRequestResults(results)
+                        self.lastTime = Date()
                     }
                 })
             })
@@ -56,6 +60,9 @@ class VisionObjectRecognitionVC: ViewController {
             
             detectionOverlay.addSublayer(shapeLayer)
         }
+
+        let fpsLayer = self.createFPSLayer()
+        detectionOverlay.addSublayer(fpsLayer)
         
         self.updateLayerGeometry()
         CATransaction.commit()
@@ -141,4 +148,23 @@ class VisionObjectRecognitionVC: ViewController {
         return shapeLayer
     }
     
+    func createFPSLayer() -> CATextLayer {
+        let fpsLayer = CATextLayer()
+        fpsLayer.name = "FPS Label"
+        let strFPS = String(format: "%.1f FPS - %.1f ms", 1 / predictTime, predictTime * 1000)
+        let formattedString = NSMutableAttributedString(string: strFPS)
+        let largeFont = UIFont(name: "Helvetica", size: 16.0)!
+        formattedString.addAttributes([NSAttributedString.Key.font: largeFont], range: NSRange(location: 0, length: strFPS.count))
+        fpsLayer.string = formattedString
+        fpsLayer.bounds = CGRect(x: 0, y: 0, width: 140, height: 30)
+        fpsLayer.position = CGPoint(x: 40, y: 135)
+        fpsLayer.shadowOpacity = 1.0
+        fpsLayer.shadowColor = CGColor(colorSpace: CGColorSpaceCreateDeviceRGB(), components: [1.0, 1.0, 1.0, 1.0])
+        fpsLayer.shadowOffset = CGSize(width: 2, height: 2)
+        fpsLayer.foregroundColor = CGColor(colorSpace: CGColorSpaceCreateDeviceRGB(), components: [0.0, 0.0, 0.0, 1.0])
+        fpsLayer.contentsScale = 2.0
+        fpsLayer.setAffineTransform(CGAffineTransform(rotationAngle: CGFloat(.pi / 2.0)).scaledBy(x: 1.0, y: -1.0))
+        return fpsLayer
+
+    }
 }

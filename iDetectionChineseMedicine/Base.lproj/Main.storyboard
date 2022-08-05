@@ -15,16 +15,48 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YL3-b0-MM6">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eHS-Yn-J6J">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="tXK-Ko-7sh"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem systemItem="play" id="i0D-fl-eMq">
+                                        <connections>
+                                            <action selector="play:" destination="BYZ-38-t0r" id="1Wd-ne-ijg"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem enabled="NO" systemItem="pause" id="BM2-1p-Mig">
+                                        <connections>
+                                            <action selector="pause:" destination="BYZ-38-t0r" id="r01-zo-3Fj"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eHS-Yn-J6J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7Qz-5t-Qjm"/>
+                            <constraint firstItem="eHS-Yn-J6J" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Irt-KY-K8P"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eHS-Yn-J6J" secondAttribute="bottom" id="Zwi-3m-6fA"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="previewView" destination="8bC-Xf-vdC" id="2vs-Kc-fgm"/>
+                        <outlet property="pauseButtonItem" destination="BM2-1p-Mig" id="KIV-8X-Fry"/>
+                        <outlet property="playButtonItem" destination="i0D-fl-eMq" id="MSr-id-BLn"/>
+                        <outlet property="previewView" destination="YL3-b0-MM6" id="qvR-wP-YYL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="68"/>
+            <point key="canvasLocation" x="20" y="67.916041979010501"/>
         </scene>
     </scenes>
     <resources>
