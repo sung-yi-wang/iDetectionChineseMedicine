@@ -1,1 +1,2 @@
 # iDetectionChineseMedicine
+緯育 AI資料工程師班111年第一期作品
